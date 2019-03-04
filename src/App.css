@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  height: 600px;
+  width: 400px;
+}
+
+Topbar-container{
+  height: 10vh;
 }
 
 .App-logo {
