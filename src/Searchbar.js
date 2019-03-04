@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import './Topbar.css'
-
-export default class Topbar extends Component {
+import './Searchbar.css'
+export default class Searchbar extends Component {
     render() {
         return (
             <div>
-
                 
             </div>
         )
