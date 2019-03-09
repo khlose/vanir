@@ -13,7 +13,6 @@ class App extends Component {
         </header>
 
         <body>
-          <Searchbar/>>
         </body>
       </div>
     );
