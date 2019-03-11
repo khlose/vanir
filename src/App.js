@@ -4,6 +4,7 @@ import './App.css';
 import Topbar from './Topbar';
 import Searchbar from './Searchbar';
 import Itemlist from './Itemlist';
+import Footer from './Footer';
 import { Container, Row, Col } from 'reactstrap';
 class App extends Component {
   render() {
@@ -23,10 +24,8 @@ class App extends Component {
             <Row>
               <Itemlist />
             </Row>
-            <Row>
-              Footer
-                </Row>
           </Container>
+          <Footer className="App-footer"/>
         </body>
       </div>
     );
