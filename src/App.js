@@ -3,23 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 import Topbar from './Topbar';
 import Searchbar from './Searchbar';
-import { Container, Row,Col} from 'reactstrap';
+import Itemlist from './Itemlist';
+import { Container, Row, Col } from 'reactstrap';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        
+
         <header className="App-header">
-          <Topbar/>
+          <Topbar />
         </header>
 
         <body>
           <Container>
             <Row>
 
-          <Searchbar/>
-              </Row>
-            </Container>
+              <Searchbar />
+            </Row>
+            <Row>
+              <Itemlist />
+            </Row>
+            <Row>
+              Footer
+                </Row>
+          </Container>
         </body>
       </div>
     );

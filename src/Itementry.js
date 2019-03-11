@@ -1,12 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import'./Itementry.css'
+import { ListGroupItem } from 'reactstrap';
 
-export default class Itementry extends Component {
+class Itementry extends Component {
     render() {
         return (
             <div>
-                
+                <ListGroupItem>LOREM IPSUM</ListGroupItem>
             </div>
-        )
+        );
     }
 }
+
+Itementry.propTypes = {
+
+};
+
+export default Itementry;
