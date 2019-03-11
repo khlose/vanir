@@ -9,10 +9,11 @@ class App extends Component {
       <div className="App">
         
         <header className="App-header">
-          <Topbar className="Topbar-container"/>
+          <Topbar />
         </header>
 
         <body>
+          <Searchbar />
         </body>
       </div>
     );

@@ -1,3 +1,4 @@
-.Topbar-container {
-    height: 500px;
-  }
+.MainDiv{
+  background-color: red;
+  height: inherit;
+}

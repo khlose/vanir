@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Grid from '@material-ui/core/Grid';
+import './Topbar.css';
+import { Container, Row, Col } from 'reactstrap';
 
 class Topbar extends Component {
     constructor(props) {
@@ -38,14 +39,15 @@ class Topbar extends Component {
 
     render() {
         return (
-            <div>
+            <Container>
 
-            </div>
+                
+            </Container>
         )
     }
 }
 
-componentName.propTypes = {
+Topbar.propTypes = {
 
 }
 
