@@ -1,0 +1,5 @@
+.borderless-item{
+    border-top: 0 none;
+    border-bottom: 0 none;
+    background-color: red;
+}

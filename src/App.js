@@ -7,6 +7,7 @@ import Itemlist from './Itemlist';
 import Footer from './Footer';
 import { Container, Row, Col } from 'reactstrap';
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -16,16 +17,9 @@ class App extends Component {
         </header>
 
         <body>
-          <Container>
-            <Row>
-
-              <Searchbar />
-            </Row>
-            <Row>
-              <Itemlist />
-            </Row>
-          </Container>
-          <Footer className="App-footer"/>
+          <Searchbar />
+          <Itemlist />
+          <Footer className="App-footer" />
         </body>
       </div>
     );
