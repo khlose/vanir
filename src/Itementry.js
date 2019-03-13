@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ListGroupItem, Container, Row, Col,Button } from 'reactstrap';
+import { ListGroupItem, Container, Row, Col, Button } from 'reactstrap';
 import './Itementry.css';
 
 class Itementry extends Component {
@@ -9,21 +9,26 @@ class Itementry extends Component {
             <div>
                 <ListGroupItem className="borderless-item">
                     <Container>
-                        <Col xs="2">
-                            Image
-                        </Col>
-                        <Col xs="8">
-                            <Row>
-                                Title
-                            </Row>
-                            <Row>
-                                Price/Vol
-                            </Row>
-                        </Col>
-                        <Col xs="2">
-                            <Button/>
-                            <Button/>
-                        </Col>
+                        <Row >
+                            <Col>
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="itemimg">
+                                </img>
+                            </Col>
+                            <Col>
+                                <Row>
+                                    Price
+                                </Row>
+                                <Row>
+                                    Volume
+                                </Row>
+                            </Col>
+                            <Col>
+                                <Button>Unsave
+    
+                            </Button>
+                            </Col>
+                        </Row>
+
                     </Container>
                 </ListGroupItem>
             </div>

@@ -3,3 +3,8 @@
     border-bottom: 0 none;
     background-color: red;
 }
+.mid-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
