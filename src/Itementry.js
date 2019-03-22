@@ -5,27 +5,26 @@ import './Itementry.css';
 
 class Itementry extends Component {
     render() {
+        //let imgUrl = "https://static.poporing.life/items/" + {prop.itemName} + ".png";
         return (
             <div>
                 <ListGroupItem className="borderless-item">
                     <Container>
                         <Row >
-                            <Col>
-                                <img src="https://dummyimage.com/50x50/000/fff" alt="itemimg">
+                            <Col xs={{ size: 2, offset: 0 }}>
+                                <img src={this.props.itemImageUrl} alt={this.props.itemName}>
                                 </img>
                             </Col>
-                            <Col>
+                            <Col xs={{ size: 7, offset: 1 }}>
                                 <Row>
-                                    Price
+                                    {this.props.itemName}
                                 </Row>
                                 <Row>
-                                    Volume
+                                    {this.props.itemPrice} / {this.props.itemVolume}
                                 </Row>
                             </Col>
-                            <Col>
-                                <Button>Unsave
-    
-                            </Button>
+                            <Col xs={{ size: 2, offset: 0 }}>
+                                <Button><span class="glyphicon glyphicon-search"></span></Button>
                             </Col>
                         </Row>
 

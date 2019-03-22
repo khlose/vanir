@@ -7,11 +7,37 @@ export default class Itemlist extends Component {
     render() {
         return (
             <ListGroup>
-                <Itementry></Itementry>
-                <Itementry></Itementry>
-                <Itementry></Itementry>
-                <Itementry></Itementry>
-                <Itementry></Itementry>
+                <Itementry itemName="Emperium" 
+                itemImageUrl="https://static.poporing.life/items/emperium.png"
+                itemPrice="25,000z"
+                itemVolume="111,111ea"
+                />
+                
+                <Itementry itemName="Emperium" 
+                itemImageUrl="https://static.poporing.life/items/emperium.png"
+                itemPrice="25,000z"
+                itemVolume="111,111ea"
+                />
+
+                <Itementry itemName="Emperium" 
+                itemImageUrl="https://static.poporing.life/items/emperium.png"
+                itemPrice="25,000z"
+                itemVolume="111,111ea"
+                />
+
+                <Itementry itemName="Emperium" 
+                itemImageUrl="https://static.poporing.life/items/emperium.png"
+                itemPrice="25,000z"
+                itemVolume="111,111ea"
+                />
+
+                <Itementry itemName="Emperium" 
+                itemImageUrl="https://static.poporing.life/items/emperium.png"
+                itemPrice="25,000z"
+                itemVolume="111,111ea"
+                />
+
+
             </ListGroup>
         )
     }

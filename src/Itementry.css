@@ -1,10 +1,15 @@
 .borderless-item{
     border-top: 0 none;
     border-bottom: 0 none;
-    background-color: red;
+    background-color: #d3e4ff;
 }
 .mid-align{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+img{
+    width: 50px;
+    height: 50px;
 }
