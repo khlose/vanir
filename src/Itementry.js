@@ -24,7 +24,7 @@ class Itementry extends Component {
                                 </Row>
                             </Col>
                             <Col xs={{ size: 2, offset: 0 }}>
-                                <Button><span class="glyphicon glyphicon-search"></span></Button>
+                                <Button><span className="glyphicon glyphicon-search"></span></Button>
                             </Col>
                         </Row>
 
