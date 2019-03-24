@@ -2,6 +2,7 @@ import React, { Component,Fragment } from 'react'
 import './Searchbar.css'
 import { InputGroup, InputGroupAddon, Input} from 'reactstrap';
 import PropTypes from "prop-types";
+import Searchitem from "./Searchitem";
 
 export default class Searchbar extends Component {
     static propTypes = {
@@ -35,7 +36,7 @@ export default class Searchbar extends Component {
         // Filter our suggestions that don't contain the user's input
         const filteredSuggestions = suggestions.filter(
           suggestion =>
-            suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+            suggestion.name.toLowerCase().indexOf(userInput.toLowerCase()) > -1
         );
     
         // Update the user input and filtered suggestions, reset the active
@@ -114,17 +115,15 @@ export default class Searchbar extends Component {
     
                   // Flag the active suggestion with a class
                   if (index === activeSuggestion) {
-                    className = "suggestion-active";
+                    className = "suggestion-active search-item";
                   }
     
                   return (
-                    <li
-                      className={className}
-                      key={suggestion}
-                      onClick={onClick}
-                    >
-                      {suggestion}
-                    </li>
+                      <Searchitem
+                        className={className}
+                        suggestion={suggestion}
+                        onClick={onClick}
+                      />
                   );
                 })}
               </ul>
