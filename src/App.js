@@ -18,7 +18,7 @@ class App extends Component {
         </header>
 
         
-          <Searcharea />
+          <Searcharea className="SearchArea" />
           
           <Itemlist />
         

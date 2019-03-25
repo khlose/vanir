@@ -26,6 +26,11 @@
   color: #61dafb;
 }
 
+.SearchArea{
+  position: absolute;
+  z-index: 999;
+}
+
 .App-footer{
   position: fixed;
   left: 0;
