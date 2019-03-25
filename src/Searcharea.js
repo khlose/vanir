@@ -8,11 +8,11 @@ export default class componentName extends Component {
     }
     componentDidMount() {
         axios.get('https://api.poporing.life/get_item_list').then(result => {
-            const items = result.data.data.item_list;
-            // console.log(result);
-            // console.log(result.data);
-            // console.log(result.data.data.item_list);
-            console.log(items);
+            const items = result.data.data.item_list.filter(function (item) {
+                if (item.image_url !== "") {
+                    return item;
+                }
+            });
             this.setState({ items });
         })
     }

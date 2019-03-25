@@ -1,8 +1,10 @@
 import React, { Component,Fragment } from 'react'
 import './Searchbar.css'
-import { InputGroup, InputGroupAddon, Input} from 'reactstrap';
+import { InputGroup, InputGroupAddon, Input, ListGroup} from 'reactstrap';
 import PropTypes from "prop-types";
 import Searchitem from "./Searchitem";
+
+
 
 export default class Searchbar extends Component {
     static propTypes = {
@@ -106,10 +108,11 @@ export default class Searchbar extends Component {
     
         let suggestionsListComponent;
     
-        if (showSuggestions && userInput) {
+        //length >= 3 to avoid it triggers at the first char and stutter UI
+        if (showSuggestions && userInput && userInput.length >= 3) {
           if (filteredSuggestions.length) {
             suggestionsListComponent = (
-              <ul className="suggestions">
+              <ListGroup className="suggestions">
                 {filteredSuggestions.map((suggestion, index) => {
                   let className;
     
@@ -126,7 +129,7 @@ export default class Searchbar extends Component {
                       />
                   );
                 })}
-              </ul>
+              </ListGroup>
             );
           } else {
             suggestionsListComponent = (
